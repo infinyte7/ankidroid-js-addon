@@ -5,6 +5,8 @@ This page will be updated regularly.
 
 Anki has many amazing addons that make learning, creating and managing notes and decks easier. But in AnkiDroid due to platform restrictions those addons are not available. Anki written in python and rust and easier to write addons also. But in AnkiDroid addons can be developed but those are need to install as separate app.
 
+Note: AnkiDroid only download js addons from npmjs and inject or perform action defined in index.js of addons. But hosting and managing of these addons is depend on addon developer and npmjs. AnkiDroid reads ```index.js``` from addons dir and perform action.
+
 ## Addons Type
 This is implementation of using JavaScript as addons support. There are two implementation in progress.
 
