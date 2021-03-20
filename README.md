@@ -211,9 +211,12 @@ AnkiDroid
 
 Change addon type to ```note_editor```
 
+Add ```addon_icon``` with single char as icon for button in note editor
+
 ```
   "ankidroid_js_api": "0.0.1",
-  "addon_type": "note_editor"
+  "addon_type": "note_editor",
+  "addon_icon": "["
     "keywords": [
     "ankidroid-js-addon"
   ]
@@ -351,5 +354,3 @@ function AnkiJSFunction(data) {
 ```
 
 </details>
-
-![](images)
