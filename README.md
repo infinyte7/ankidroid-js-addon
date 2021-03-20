@@ -54,16 +54,16 @@ To make it remain for longer time in AnkiDroid there are some specific standard 
 
       b) Import in AnkiDroid
 
-4. Copy ```npm i ankidroid-js-addons...```
+4. Copy ```npm i ankidroid-js-addons...``` from npmjs addon page
 5. Paste in AnkiDroid <br>
 ```AnkiDroid -> Addons -> Import Addons```
 6. Wait for installation to complete
 7. Change note type from options menu to view reviewer / note editor addons
 8. Turn on to use in reviewer / note editor
 
-View demo for [progress bar](images/progress_bar_addon.gif)
+**View demo for [progress bar](images/progress_bar_addon.gif)**
 
-View demo for [mini cloze overlapper](images/mini_cloze_addon.gif)
+**View demo for [mini cloze overlapper](images/mini_cloze_addon.gif)**
 
 ## How it works?
 #### 1. Reviewer Addons
