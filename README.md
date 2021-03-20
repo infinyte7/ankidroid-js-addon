@@ -11,6 +11,7 @@ This page will be updated regularly.
 - [How to create addons?](#how-to-create-addons)
     - [Reviewer](#reviewer-addons)
     - [Note Editor](#note-editor-addons)
+- [Issues and bugs](#issues-and-bugs)
 
 Anki has many amazing addons that make learning, creating and managing notes and decks easier. But in AnkiDroid due to platform restrictions those addons are not available. Anki written in python and rust and easier to write addons also. But in AnkiDroid addons can be developed but those need to install as separate app.
 
@@ -390,3 +391,6 @@ function AnkiJSFunction(data) {
 ```
 
 </details>
+
+# Issues and bugs
+Report issues and bugs [here](https://github.com/infinyte7/ankidroid-js-addon/issues)
