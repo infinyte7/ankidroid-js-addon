@@ -4,7 +4,7 @@ Reviewer and note editor addons
 This page will be updated regularly. This repository created for testing pre alpha release of js addon support in AnkiDroid. 
 
 View
-- PR [#8011](https://github.com/ankidroid/Anki-Android/pull/8011) 
+- PR [#7958](https://github.com/ankidroid/Anki-Android/pull/7958) 
 - PR [#8011](https://github.com/ankidroid/Anki-Android/pull/8011)
 
 This is for [pre alpha version](https://github.com/infinyte7/Anki-Android/releases/tag/js-addons-v1.0.0) of AnkiDroid so report issues, bugs, suggestions and feedback [here](https://github.com/infinyte7/ankidroid-js-addon/issues).
