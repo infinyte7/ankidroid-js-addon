@@ -3,6 +3,15 @@ Reviewer and note editor addons
 
 This page will be updated regularly.
 
+- [Addons Type](#addons-type)
+- [How to install addons?](#how-to-install-addons)
+- [How it works?](#how-it-works)
+    - [Reviewer](#1-reviewer-addons-1)
+    - [Note Editor](#2-note-editor-addons-1)
+- [How to create addons?](#how-to-create-addons)
+    - [Reviewer](#reviewer-addons)
+    - [Note Editor](#note-editor-addons)
+
 Anki has many amazing addons that make learning, creating and managing notes and decks easier. But in AnkiDroid due to platform restrictions those addons are not available. Anki written in python and rust and easier to write addons also. But in AnkiDroid addons can be developed but those are need to install as separate app.
 
 Note: AnkiDroid only download js addons from npmjs and inject or perform action defined in index.js of addons. But hosting and managing of these addons is depend on addon developer and npmjs. AnkiDroid reads ```index.js``` from addons dir and perform action.
@@ -27,14 +36,29 @@ It adds buttons to note editor toolbar. It can be used to create notes easily.
 ## How to install addons?
 To make it remain for longer time in AnkiDroid there are some specific standard set up. It may change with new ideas and suggestions.
 
-1. Publish addons to [npmjs](https://www.npmjs.com/). Why? Because to reduce the burden of hosting and managing of JS addons on AnkiDroid side
+1. Download this AnkiDroid version from [release page]()
+2. Visit [npmjs:ankidroid-js-addon](https://www.npmjs.com/search?q=keywords:ankidroid-js-addon)
+3. Select addons 
 
-2. Download addons inside AnkiDroid<br> 
-```AnkiDroid -> Addons -> Import Addons```<br>
-Paste ```npm i ankidroid-js-addons...```<br>
 
-3. Wait for installation to complete
-4. Turn on to use in reviewer / note editor
+For testing cloze addon
+
+a) Download the deck which contains template for cloze
+- [Sample cloze deck](Sample%20deck)
+
+b) Import in AnkiDroid
+
+
+4. Copy ```npm i ankidroid-js-addons...```
+5. Paste in AnkiDroid <br>
+```AnkiDroid -> Addons -> Import Addons```
+6. Wait for installation to complete
+7. Change note type from options menu to view reviewer / note editor addons
+8. Turn on to use in reviewer / note editor
+
+View demo for installing [progress bar](images/progress_bar_addon.gif)
+
+View demo for installing [mini cloze overlapper](images/mini_cloze_addon.gif)
 
 ## How it works?
 #### 1. Reviewer Addons
@@ -196,7 +220,6 @@ document.head.appendChild(styleSheet);
 </details>
 
 ## Note editor addons
-### Reviewer addons
 1. Install npmjs and create an account or manually paste the index.js and package.json in following directory structure
 
 ```
