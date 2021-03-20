@@ -36,7 +36,7 @@ It adds buttons to note editor toolbar. It can be used to create notes easily.
 ## How to install addons?
 To make it remain for longer time in AnkiDroid there are some specific standard set up. It may change with new ideas and suggestions.
 
-1. Download this AnkiDroid version from [release page]()
+1. Download this AnkiDroid version from [release page](https://github.com/infinyte7/Anki-Android/releases/tag/js-addons-v1.0.0)
 2. Visit [npmjs:ankidroid-js-addon](https://www.npmjs.com/search?q=keywords:ankidroid-js-addon)
 3. Select addons 
 
