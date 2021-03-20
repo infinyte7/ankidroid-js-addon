@@ -5,7 +5,7 @@ This page will be updated regularly.
 
 Anki has many amazing addons that make learning, creating and managing notes and decks easier. But in AnkiDroid due to platform restrictions those addons are not available. Anki written in python and rust and easier to write addons also. But in AnkiDroid addons can be developed but those are need to install as separate app.
 
-## Addons
+## Addons Type
 This is implementation of using JavaScript as addons support. There are two implementation in progress.
 
 ### 1. Reviewer addons
@@ -27,9 +27,9 @@ To make it remain for longer time in AnkiDroid there are some specific standard 
 
 1. Publish addons to [npmjs](https://www.npmjs.com/). Why? Because to reduce the burden of hosting and managing of JS addons on AnkiDroid side
 
-2. Download addons inside AnkiDroid 
-```AnkiDroid -> Addons -> Import Addons```
-Paste ```npm i ankidroid-js-addons...```
+2. Download addons inside AnkiDroid<br> 
+```AnkiDroid -> Addons -> Import Addons```<br>
+Paste ```npm i ankidroid-js-addons...```<br>
 
 3. Wait for installation to complete
 4. Turn on to use in reviewer / note editor
@@ -74,7 +74,7 @@ AnkiDroid
  - collection.media
 ```
 
-2. Create package.json file. Note: This is import to have following in package.json to distinguish from other npm package and use inside AnkiDroid
+2. Create package.json file. Note: This is important to have following in package.json to distinguish from other npm package and to use inside AnkiDroid
 ```
   "ankidroid_js_api": "0.0.1",
   "addon_type": "reviewer"
@@ -261,17 +261,23 @@ The parameter contains json format data of selected text, fields name, fields co
 
 ```
 AnkiDroid  -->  JS Addon
-send deck name, model name, fields count, fields name and selected text in json format to js addon
+when AnkiJSFunction called then deck name, model name, fields count, fields name and selected text in json format passed to js addon
+
+
+ { 
+   "noteType": "Basic",
+   "deckName": "Default",
+   "fieldsName": ["Front", "Back"],
+   "fieldsCount": 2,
+   "selectedText": "Some selected text..." 
+}
 ```
 
 ```
 AnkiDroid  <--  JS Addon
-receive json format data with changed text and data that needs to be inserted to fields with index
-```
+Note editor receive json format data with changed text and data that needs to be inserted to fields with index
 
-data changed by js addon and pass to AnkiDroid
-```
-AnkiDroid  <--  JS Addon
+
  { 
   "changedText": "some changed text...",
   "addToFields": { 
@@ -285,13 +291,16 @@ AnkiDroid  <--  JS Addon
 
 Selected text change option
 ```
-change option - replace, append, clear, default - with selected text
+replace
+append
+clear
+default
 ```
 
 Usage of above implementation in new **[AnkiDroid Cloze Overlapper Mini JS Addon](https://www.npmjs.com/package/ankidroid-js-addon-cloze)**
 
 a) To test this addon first import this deck as it contains note type matching in index.js
-[Ocloze sample deck](https://github.com/infinyte7/ankidroid-js-addon/raw/main/Sample%20deck/ocloze%20sample%20deck.apkg)
+- [Ocloze sample deck](https://github.com/infinyte7/ankidroid-js-addon/raw/main/Sample%20deck/ocloze%20sample%20deck.apkg)
 
 b) Select ocloze-infi type then use this addon
 
@@ -342,3 +351,5 @@ function AnkiJSFunction(data) {
 ```
 
 </details>
+
+![](images)
