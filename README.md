@@ -12,7 +12,7 @@ This page will be updated regularly.
     - [Reviewer](#reviewer-addons)
     - [Note Editor](#note-editor-addons)
 
-Anki has many amazing addons that make learning, creating and managing notes and decks easier. But in AnkiDroid due to platform restrictions those addons are not available. Anki written in python and rust and easier to write addons also. But in AnkiDroid addons can be developed but those are need to install as separate app.
+Anki has many amazing addons that make learning, creating and managing notes and decks easier. But in AnkiDroid due to platform restrictions those addons are not available. Anki written in python and rust and easier to write addons also. But in AnkiDroid addons can be developed but those need to install as separate app.
 
 Note: AnkiDroid only download js addons from npmjs and inject or perform action defined in index.js of addons. But hosting and managing of these addons is depend on addon developer and npmjs. AnkiDroid reads ```index.js``` from addons dir and perform action.
 
@@ -40,14 +40,12 @@ To make it remain for longer time in AnkiDroid there are some specific standard 
 2. Visit [npmjs:ankidroid-js-addon](https://www.npmjs.com/search?q=keywords:ankidroid-js-addon)
 3. Select addons 
 
+    For testing cloze addon
 
-For testing cloze addon
+      a) Download the deck which contains template for cloze
+      - [Sample cloze deck](https://github.com/infinyte7/ankidroid-js-addon/raw/main/Sample%20deck/ocloze%20sample%20deck.apkg)
 
-a) Download the deck which contains template for cloze
-- [Sample cloze deck](Sample%20deck)
-
-b) Import in AnkiDroid
-
+      b) Import in AnkiDroid
 
 4. Copy ```npm i ankidroid-js-addons...```
 5. Paste in AnkiDroid <br>
@@ -56,9 +54,9 @@ b) Import in AnkiDroid
 7. Change note type from options menu to view reviewer / note editor addons
 8. Turn on to use in reviewer / note editor
 
-View demo for installing [progress bar](images/progress_bar_addon.gif)
+View demo for [progress bar](images/progress_bar_addon.gif)
 
-View demo for installing [mini cloze overlapper](images/mini_cloze_addon.gif)
+View demo for [mini cloze overlapper](images/mini_cloze_addon.gif)
 
 ## How it works?
 #### 1. Reviewer Addons
@@ -101,6 +99,9 @@ AnkiDroid
 ```
 
 2. Create package.json file. Note: This is important to have following in package.json to distinguish from other npm package and to use inside AnkiDroid
+
+View [AnkiDroid:AddonsBrowser.java#L420-#L455](https://github.com/infinyte7/Anki-Android/blob/note-editor-addon/AnkiDroid/src/main/java/com/ichi2/anki/AddonsBrowser.java#L420-#L455)
+
 ```
   "ankidroid_js_api": "0.0.1",
   "addon_type": "reviewer"
@@ -149,6 +150,8 @@ Example of progress bar
 <br>
 
 3. Create ```index.js``` with content that you want to inject to reviewer
+
+View [AnkiDroid:AbstractFlashcardViewer.java#L2411-#L2480](https://github.com/infinyte7/Anki-Android/blob/addons/AnkiDroid/src/main/java/com/ichi2/anki/AbstractFlashcardViewer.java#L2411-#L2480)
 
 <details>
 
@@ -234,6 +237,10 @@ AnkiDroid
 
 2. Create package.json file. Note: This is import to have following in package.json to distinguish from other npm package and use inside AnkiDroid
 
+View [AnkiDroid:AddonsBrowser.java#L420-#L455](https://github.com/infinyte7/Anki-Android/blob/note-editor-addon/AnkiDroid/src/main/java/com/ichi2/anki/AddonsBrowser.java#L420-#L455)
+
+View [NoteEditor.java:listEnabledAddonsFromDir()](https://github.com/infinyte7/Anki-Android/blob/note-editor-addon/AnkiDroid/src/main/java/com/ichi2/anki/NoteEditor.java#L2516-#L2592)
+
 Change addon type to ```note_editor```
 
 Add ```addon_icon``` with single char as icon for button in note editor
@@ -285,6 +292,8 @@ Add ```addon_icon``` with single char as icon for button in note editor
 
 3. Create ```index.js``` and write function with the name ```AnkiJSFunction``` and single parameter. Note: don't change function name as this is the function that AnkiDroid call.
 
+View [NoteEditor.java:onAddonClick()](https://github.com/infinyte7/Anki-Android/blob/note-editor-addon/AnkiDroid/src/main/java/com/ichi2/anki/NoteEditor.java#L2594-#L2673)
+
 The parameter contains json format data of selected text, fields name, fields count, deck name and note type. Use this json data to change or insert data to Edit fields in Note editor.
 
 ```
@@ -324,6 +333,8 @@ append
 clear
 default
 ```
+
+View [NoteEditor.java:jsAddonParseResult()](https://github.com/infinyte7/Anki-Android/blob/note-editor-addon/AnkiDroid/src/main/java/com/ichi2/anki/NoteEditor.java#L2676-#L2714)
 
 Usage of above implementation in new **[AnkiDroid Cloze Overlapper Mini JS Addon](https://www.npmjs.com/package/ankidroid-js-addon-cloze)**
 
