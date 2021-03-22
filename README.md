@@ -39,6 +39,7 @@ It adds buttons to note editor toolbar. It can be used to create notes easily.
 #### Example 
 - [Subscript](Note%20editor%20addons/ankidroid-js-addon-subscript/package)
 - [Mini Cloze Overlapper](Note%20editor%20addons/ankidroid-js-addon-cloze/package)
+- [Hanzi to Pinyin](Note%20editor%20addons/ankidroid-js-addon-hanzi-to-pinyin)
 
 ## How to install addons?
 To make it remain for longer time in AnkiDroid there are some specific standard set up. It may change with new ideas and suggestions.

@@ -1,0 +1,25 @@
+{
+  "name": "ankidroid-js-addon-hanzi-to-pinyin",
+  "version": "1.0.0",
+  "description": "Convert hanzi to pinyin",
+  "main": "index.js",
+  "ankidroid_js_api": "0.0.1",
+  "addon_type": "note_editor",
+  "addon_icon": "文",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/infinyte7/ankidroid-js-addon.git"
+  },
+  "keywords": [
+    "ankidroid-js-addon"
+  ],
+  "author": "infinyte7",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/infinyte7/ankidroid-js-addon/issues"
+  },
+  "homepage": "https://github.com/infinyte7/ankidroid-js-addon#readme"
+}
