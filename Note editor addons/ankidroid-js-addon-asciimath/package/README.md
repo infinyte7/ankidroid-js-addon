@@ -31,13 +31,13 @@ Convert ASCII math notation and (some) LaTeX to Presentation MathML
 ![](https://github.com/infinyte7/ankidroid-js-addon/blob/main/images/Fourier_transform_eq1.svg)
 
 ```
-hat f \(xi)=int_(-infty)^(infty)f(x)e^(-2pi x xi)dx
+hat f \(xi)=int_(-infty)^(infty)f(x)e^(-2pi i x xi)dx
 ```
 
 Converted to MathJax using js addon
 
 ```
-\(\hat{{f}}{\left(\xi\right)}={\int_{{-\infty}}^{{\infty}}}{f{{\left({x}\right)}}}{e}^{{-{2}\pi{x}\xi}}{\left.{d}{x}\right.}\)
+\(\hat{{f}}{\left(\xi\right)}={\int_{{-\infty}}^{{\infty}}}{f{{\left({x}\right)}}}{e}^{{-{2}\pi{i}{x}\xi}}{\left.{d}{x}\right.}\)
 ```
 
 ## Learn more
@@ -46,6 +46,8 @@ Converted to MathJax using js addon
 
 ## Demo
 <img src="https://raw.githubusercontent.com/infinyte7/ankidroid-js-addon/main/images/demo_ascii_math.gif" height=450></img>
+
+*Note: ```i``` is missing in equation in above image.*
 
 ## License and Credits
 ### asciimathml
