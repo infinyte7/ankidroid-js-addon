@@ -4,7 +4,7 @@ Type less and use addon to convert to math jax
 Convert ASCII math notation and (some) LaTeX to Presentation MathML
 
 ## Install
-1. Download AnkiDroid.JS version from [release page]
+1. Download AnkiDroid.JS version from [release page](https://github.com/infinyte7/Anki-Android/releases)
 
 2. Copy ```npm i ankidroid-js-addon-asciimath```
 
