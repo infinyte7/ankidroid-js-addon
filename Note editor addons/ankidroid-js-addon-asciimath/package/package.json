@@ -1,6 +1,6 @@
 {
   "name": "ankidroid-js-addon-asciimath",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "convert ASCII math notation and (some) LaTeX to Presentation MathML",
   "main": "index.js",
   "ankidroid_js_api": "0.0.1",
