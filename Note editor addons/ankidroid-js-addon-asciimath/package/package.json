@@ -1,0 +1,25 @@
+{
+  "name": "ankidroid-js-addon-asciimath",
+  "version": "1.0.0",
+  "description": "convert ASCII math notation and (some) LaTeX to Presentation MathML",
+  "main": "index.js",
+  "ankidroid_js_api": "0.0.1",
+  "addon_type": "note_editor",
+  "addon_icon": "Σ",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/infinyte7/ankidroid-js-addon.git"
+  },
+  "keywords": [
+    "ankidroid-js-addon"
+  ],
+  "author": "Mani (infinyte7)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/infinyte7/ankidroid-js-addon/issues"
+  },
+  "homepage": "https://github.com/infinyte7/ankidroid-js-addon/tree/main/Note%20editor%20addons/ankidroid-js-addon-asciimath/package#readme"
+}
