@@ -1,0 +1,24 @@
+{
+  "name": "ankidroid-js-addon-cards-info",
+  "version": "1.0.0",
+  "description": "Show pop up in with cards info during review in AnkiDroid",
+  "main": "index.js",
+  "ankidroid_js_api": "0.0.1",
+  "addon_type": "reviewer",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/infinyte7/ankidroid-js-addon.git"
+  },
+  "keywords": [
+    "ankidroid-js-addon"
+  ],
+  "author": "infinyte7",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/infinyte7/ankidroid-js-addon/issues"
+  },
+  "homepage": "https://github.com/infinyte7/ankidroid-js-addon#readme"
+}
