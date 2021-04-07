@@ -17,6 +17,19 @@ Create cloze from list
 
 8. Turn on to use in reviewer / note editor
 
+## Usage
+
+1. Download sample deck it contains template for the deck.
+
+    a) Download the deck which contains template for cloze
+    - [Sample cloze deck](https://github.com/infinyte7/ankidroid-js-addon/raw/main/Sample%20deck/ocloze%20sample%20deck.apkg)
+
+    b) Import in AnkiDroid
+
+2. Select ocloze in note type
+3. Add item list per line in edit text
+4. Click `[` generate cloze
+5. Add notes to the deck
 
 ## Demo
 <img src="https://github.com/infinyte7/ankidroid-js-addon/blob/main/images/mini_cloze_addon.gif?raw=true" height=450></img>
