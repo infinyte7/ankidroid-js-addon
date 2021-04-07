@@ -19,4 +19,11 @@ Create cloze from list
 
 
 ## Demo
-![](https://github.com/infinyte7/ankidroid-js-addon/blob/main/images/mini_cloze_addon.gif?raw=true)
+<img src="https://github.com/infinyte7/ankidroid-js-addon/blob/main/images/mini_cloze_addon.gif?raw=true" height=450></img>
+
+## License
+**Card Template**<br>
+The deck and its template taken from [cloze-overlapper](https://github.com/glutanimate/cloze-overlapper) developed by Glutanimate. Support work of [Glutanimate](https://www.patreon.com/glutanimate).
+<br>[Click here to support Glutanimate's work](https://glutanimate.com/support-my-work/)
+<br>
+CC BY-SA 4.0
