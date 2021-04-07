@@ -4,6 +4,7 @@ Reviewer and note editor addons
 This page will be updated regularly. This repository created for testing pre alpha release of js addon support in AnkiDroid. 
 
 View
+- PR [#8440](https://github.com/ankidroid/Anki-Android/pull/8440)
 - PR [#7958](https://github.com/ankidroid/Anki-Android/pull/7958) 
 - PR [#8011](https://github.com/ankidroid/Anki-Android/pull/8011)
 
@@ -32,6 +33,7 @@ It adds content to reviewer webview. It can be used to redesign the reviewer UI.
 #### Example 
 - [Progress bar](Reviewer%20addons/ankidroid-js-addon-progress-bar/package)
 - [Buttons and card counts](Reviewer%20addons/ankidroid-js-addon-button-card-count/package)
+- [Material Design Reviewer](Reviewer%20addons/ankidroid-js-addon-material-reviewer/package)
 
 ### 2. Note editor addons
 It adds buttons to note editor toolbar. It can be used to create notes easily.
@@ -39,7 +41,8 @@ It adds buttons to note editor toolbar. It can be used to create notes easily.
 #### Example 
 - [Subscript](Note%20editor%20addons/ankidroid-js-addon-subscript/package)
 - [Mini Cloze Overlapper](Note%20editor%20addons/ankidroid-js-addon-cloze/package)
-- [Hanzi to Pinyin](Note%20editor%20addons/ankidroid-js-addon-hanzi-to-pinyin)
+- [Hanzi to Pinyin](Note%20editor%20addons/ankidroid-js-addon-hanzi-to-pinyin/package)
+- [Asciimath](Note%20editor%20addons/ankidroid-js-addon-asciimath/package)
 
 ## How to install addons?
 To make it remain for longer time in AnkiDroid there are some specific standard set up. It may change with new ideas and suggestions.

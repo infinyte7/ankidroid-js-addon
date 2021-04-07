@@ -1,22 +1,22 @@
-Create cloze from list
+# Material Design To Reviewer
+Redesign reviewer buttons and card counts
 
 ## Install
 1. Download AnkiDroid.JS version from [release page](https://github.com/infinyte7/Anki-Android/releases)
 
-2. Copy ```npm i ankidroid-js-addon-cloze``` from [npmjs](https://www.npmjs.com/package/ankidroid-js-addon-cloze)
+2. Copy ```npm i ankidroid-js-addon-material-reviewer``` from npmjs
 
 5. Paste in AnkiDroid
     
-    ```
+    `
     AnkiDroid -> Addons -> Import Addons
-    ```
+    `
 
 6. Wait for installation to complete
 
 7. Change note type from options menu to view reviewer / note editor addons
 
-8. Turn on to use in reviewer / note editor
-
+8. Turn on to use in reviewer
 
 ## Demo
-![](https://github.com/infinyte7/ankidroid-js-addon/blob/main/images/mini_cloze_addon.gif?raw=true)
+![](https://raw.githubusercontent.com/infinyte7/ankidroid-js-addon/main/images/demo_material_reviewer.gif)
