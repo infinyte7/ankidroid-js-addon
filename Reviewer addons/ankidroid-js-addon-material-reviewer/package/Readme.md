@@ -19,4 +19,4 @@ Redesign reviewer buttons and card counts
 8. Turn on to use in reviewer
 
 ## Demo
-![](https://raw.githubusercontent.com/infinyte7/ankidroid-js-addon/main/images/demo_material_reviewer.gif)
+<img src="https://raw.githubusercontent.com/infinyte7/ankidroid-js-addon/main/images/demo_material_reviewer.gif" height=450></img>

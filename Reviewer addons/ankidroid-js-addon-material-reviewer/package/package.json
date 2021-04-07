@@ -1,6 +1,6 @@
 {
   "name": "ankidroid-js-addon-material-reviewer",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Add material design reviewer using js api",
   "main": "index.js",
   "ankidroid_js_api": "0.0.1",
