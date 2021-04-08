@@ -3,7 +3,7 @@ Show pop up in with cards info during review in AnkiDroid
 ## Install
 1. Download unofficial AnkiDroid.JS version from [release page](https://github.com/infinyte7/Anki-Android/releases)
 
-2. Copy ```npm i ankidroid-js-addon-cards-info```
+2. Copy ```npm i ankidroid-js-addon-cards-info``` from [npmjs](https://www.npmjs.com/package/ankidroid-js-addon-cards-info)
 
 5. Paste in AnkiDroid
     

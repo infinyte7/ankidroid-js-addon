@@ -3,7 +3,7 @@ Console for reviewer in AnkiDroid to inspect element like dev tools in Chrome br
 ## Install
 1. Download AnkiDroid.JS version from [release page](https://github.com/infinyte7/Anki-Android/releases)
 
-2. Copy ```npm i ankidroid-js-addon-dev-tools``` from npmjs
+2. Copy ```npm i ankidroid-js-addon-dev-tools``` from [npmjs](https://www.npmjs.com/package/ankidroid-js-addon-dev-tools)
 
 5. Paste in AnkiDroid
     

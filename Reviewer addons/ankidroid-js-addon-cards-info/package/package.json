@@ -1,6 +1,6 @@
 {
   "name": "ankidroid-js-addon-cards-info",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Show pop up in with cards info during review in AnkiDroid",
   "main": "index.js",
   "ankidroid_js_api": "0.0.1",

@@ -3,7 +3,7 @@ Dark mode in AnkiDroid using [darkreader](https://github.com/darkreader/darkread
 ## Install
 1. Download AnkiDroid.JS version from [release page](https://github.com/infinyte7/Anki-Android/releases)
 
-2. Copy ```npm i ankidroid-js-addon-dark-mode``` from npmjs
+2. Copy ```npm i ankidroid-js-addon-dark-mode``` from [npmjs](https://www.npmjs.com/package/ankidroid-js-addon-dark-mode)
 
 5. Paste in AnkiDroid
     
