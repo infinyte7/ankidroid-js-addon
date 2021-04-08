@@ -5,7 +5,7 @@ This page will be updated regularly. This repository created for testing pre alp
 
 View
 - PR [#8440](https://github.com/ankidroid/Anki-Android/pull/8440)
-- PR [#7958](https://github.com/ankidroid/Anki-Android/pull/7958) 
+- PR [#7958](https://github.com/ankidroid/Anki-Android/pull/7958) (Closed)
 - PR [#8011](https://github.com/ankidroid/Anki-Android/pull/8011)
 
 This is for [pre alpha version](https://github.com/infinyte7/Anki-Android/releases/tag/js-addons-v1.0.0) of AnkiDroid so report issues, bugs, suggestions and feedback [here](https://github.com/infinyte7/ankidroid-js-addon/issues).
@@ -30,15 +30,16 @@ This is implementation of using JavaScript as addons support. There are two impl
 ### 1. Reviewer addons
 It adds content to reviewer webview. It can be used to redesign the reviewer UI. These addons have full access to [AnkiDroid JS API](https://github.com/ankidroid/Anki-Android/wiki/AnkiDroid-Javascript-API).
 
-#### Example 
+#### Examples 
 - [Progress bar](Reviewer%20addons/ankidroid-js-addon-progress-bar/package)
 - [Buttons and card counts](Reviewer%20addons/ankidroid-js-addon-button-card-count/package)
 - [Material Design Reviewer](Reviewer%20addons/ankidroid-js-addon-material-reviewer/package)
+- [Dark mode using darkreader](Reviewer%20addons/ankidroid-js-addon-dark-mode/package)
 
 ### 2. Note editor addons
 It adds buttons to note editor toolbar. It can be used to create notes easily.
 
-#### Example 
+#### Examples 
 - [Subscript](Note%20editor%20addons/ankidroid-js-addon-subscript/package)
 - [Mini Cloze Overlapper](Note%20editor%20addons/ankidroid-js-addon-cloze/package)
 - [Hanzi to Pinyin](Note%20editor%20addons/ankidroid-js-addon-hanzi-to-pinyin/package)
@@ -50,14 +51,6 @@ To make it remain for longer time in AnkiDroid there are some specific standard 
 1. Download this AnkiDroid version from [release page](https://github.com/infinyte7/Anki-Android/releases/tag/js-addons-v1.0.0)
 2. Visit [npmjs:ankidroid-js-addon](https://www.npmjs.com/search?q=keywords:ankidroid-js-addon)
 3. Select addons 
-
-    For testing cloze addon
-
-      a) Download the deck which contains template for cloze
-      - [Sample cloze deck](https://github.com/infinyte7/ankidroid-js-addon/raw/main/Sample%20deck/ocloze%20sample%20deck.apkg)
-
-      b) Import in AnkiDroid
-
 4. Copy ```npm i ankidroid-js-addons...``` from npmjs addon page
 5. Paste in AnkiDroid <br>
 ```AnkiDroid -> Addons -> Import Addons```
@@ -70,14 +63,59 @@ To make it remain for longer time in AnkiDroid there are some specific standard 
 **View demo for [mini cloze overlapper](images/mini_cloze_addon.gif)**
 
 ## How it works?
-#### 1. Reviewer Addons
-The JavaScript codes in ```index.js``` of enabled addons added to  ```AbstractFlashcardViewer.java``` during review.
+### 1. Reviewer Addons
+The addons get downloaded from npmjs.com and installed in AnkiDroid. For enabled addons the content added to reviewer in Card Template.
 
-During review the function ```getEnabledAddonsContent()``` in ```AbstractFlashcardViewer.java``` get valid addons directory and read ```index.js``` and inject it to reviewer in ```fillFlashCard()```.
+View PR [#8440](https://github.com/ankidroid/Anki-Android/pull/8440) for more
 
-View PR [#7958](https://github.com/ankidroid/Anki-Android/pull/7958) for more
+<details>
 
-#### 2. Note editor addons
+<summary>Click to Read more</summary>
+
+1. Users will navigate to Addons Browser Activity
+
+2. There are four button in options menu
+     - Reviewer Addons
+     - Note editor Addons  (Separate PR)
+     - Import Addons
+     - Get More Addons
+
+3. When user click `Import Addons`
+It will ask to paste `npm i ankidroid-js-addons...` that is available on npm package on npmjs.com
+
+4. When user click `Download` it will download the addons to `AnkiDroid/addons` folder
+
+5. There are implementation for checking valid npm package
+```
+{
+    "name": "ankidroid-js-addon-progress-bar",
+    "version": "1.0.0",
+    "author": "https://github.com/infinyte7",
+    "homepage": "https://github.com/infinyte7/Anki-Custom-Card-Layout",
+    "ankidroid_js_api": "0.0.1",
+    "addon_type": "reviewer",
+    "keywords": ["ankidroid-js-addon"]
+}
+```
+
+If above found in package.json on npmjs registry then then it will download the package.json and get tarball url.
+
+6. Here package with `.tgz` extension will be downloaded to `cache` folder and extracted then copied to `AnkiDroid/addons`  folder
+
+7. The addons will be listed on the Addons Browser screen
+
+8. Users have option to enable, update and delete addons.
+
+9. When users enable the addons, the `index.js` file of that addons will be added to card during review. The addons have full access to AnkiDroid JS API.
+
+**Demo of progress bar**
+
+<img src="https://user-images.githubusercontent.com/12841290/113458708-c1340c00-9445-11eb-85bb-985aba56cb2a.gif" height=500></img>
+
+</details>
+
+
+### 2. Note editor addons
 In Note editor buttons added for each and every enabled addons. When user click the buttons the function in Note editor read ```index.js``` in AnkiDroid/addons directory and call function ```AnkiJSFunction``` with data flow from AnkiDroid to JS Addons and JS addons to AnkiDroid. Here [js-evaluator-for-android](https://github.com/evgenyneu/js-evaluator-for-android) used to call js function inside Note editor.
 
 
@@ -115,11 +153,11 @@ View [AnkiDroid:AddonsBrowser.java#L420-#L455](https://github.com/infinyte7/Anki
 
 ```
   "ankidroid_js_api": "0.0.1",
-  "addon_type": "reviewer"
+  "addon_type": "reviewer",
     "keywords": [
     "ankidroid-js-addon"
-  ]
-  "author": "Your Name"
+  ],
+  "author": "Your Name",
   "homepage": "Your project website"
 ```
 
